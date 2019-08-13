@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Demo_QA]" guice-stage="DEVELOPMENT">
+  <test name="The Demo_QA TestScripts">
+    <classes>
+      <class name="com.atmecs.testscripts.AddToCart"/>
+      <class name="com.atmecs.testscripts.CountProdTest"/>
+      <class name="com.atmecs.testscripts.Checkout"/>
+    </classes>
+  </test> <!-- The Demo_QA TestScripts -->
+  <test name="The Demo_QA TestScripts(failed)">
+    <classes>
+      <class name="com.atmecs.testscripts.CountProdTest">
+        <methods>
+          <include name="CountProdTest"/>
+        </methods>
+      </class> <!-- com.atmecs.testscripts.CountProdTest -->
+      <class name="com.atmecs.testscripts.AddToCart">
+        <methods>
+          <include name="preSetup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.atmecs.testscripts.AddToCart -->
+      <class name="com.atmecs.testscripts.Checkout">
+        <methods>
+          <include name="checkout"/>
+        </methods>
+      </class> <!-- com.atmecs.testscripts.Checkout -->
+    </classes>
+  </test> <!-- The Demo_QA TestScripts(failed) -->
+</suite> <!-- Failed suite [Demo_QA] -->
